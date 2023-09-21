@@ -1,15 +1,9 @@
-import { Footer } from "./components/Footer";
-import { GoodyTime } from "./components/GoodyTime";
-import { HomeHeader } from "./components/HomeHeader";
-import { OurMenus } from "./components/OurMenus";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
     <>
-      <HomeHeader />
-      <OurMenus />
-      <GoodyTime />
-      <Footer />
+      <Home />
     </>
   );
 }

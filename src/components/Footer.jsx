@@ -2,7 +2,7 @@ export function Footer() {
   return (
     /* Contact & Hours of Operations */
     <section className="bg-blue-300 pt-14 md:pt-20 pb-6 sm:pb-0 px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24 flex flex-wrap justify-center">
-      {/* Right Column */}
+      {/* Left Column */}
       <div className="md:w-1/3 w-full flex flex-col items-center ">
         <img
           src="./images/text/hours-of-operation.png"
@@ -22,7 +22,7 @@ export function Footer() {
         <img src="./images/branding/goody-boy-colored.png" alt="" />
       </div>
 
-      {/* Left Column */}
+      {/* Right Column */}
       <div className="md:w-1/3 w-full flex flex-col items-center mt-12 mb-2 md:my-0">
         <img
           src="./images/text/location-contact.png"
