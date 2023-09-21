@@ -9,14 +9,14 @@ export function OurMenus() {
       />
       <div class="flex flex-wrap justify-center">
         {/* FOOD */}
-        <div className="md:w-1/4 w-3/4 mx-5">
+        <div className="md:w-1/4 w-3/4 mx-5 mt-10 md:mt-0">
           <a
             href="##"
-            class="flex flex-col items-center hover:opacity-80 transition-opacity duration-200 ease-in-out"
+            className="flex flex-col items-center hover:opacity-80 transition-opacity duration-200 ease-in-out"
           >
             <img
-              src="./images/burger.jpeg"
-              clasName="rounded border border-4 border-blue-300"
+              src="./images/random/food-image.jpeg"
+              className="rounded border border-4 border-blue-300"
               alt=""
             />
             <img src="./images/text/menu-food.png" class="h-6 mt-3" alt="" />
@@ -29,7 +29,7 @@ export function OurMenus() {
             className="flex flex-col items-center hover:opacity-80 transition-opacity duration-200 ease-in-out"
           >
             <img
-              src="./images/drinks-image.png"
+              src="./images/random/drinks-image.png"
               className="rounded border border-4 border-blue-300"
               alt=""
             />
@@ -43,7 +43,7 @@ export function OurMenus() {
             className="flex flex-col items-center hover:opacity-80 transition-opacity duration-200 ease-in-out"
           >
             <img
-              src="./images/happy-hour-image.png"
+              src="./images/random/happy-hour-image.png"
               className="rounded border border-4 border-blue-300"
               alt=""
             />
