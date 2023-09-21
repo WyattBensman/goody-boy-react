@@ -1,3 +1,4 @@
+import { GoodyTime } from "./components/GoodyTime";
 import { HomeHeader } from "./components/HomeHeader";
 import { OurMenus } from "./components/OurMenus";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <HomeHeader />
       <OurMenus />
+      <GoodyTime />
     </>
   );
 }
