@@ -1,5 +1,13 @@
+import { HomeHeader } from "./components/HomeHeader";
+import { OurMenus } from "./components/OurMenus";
+
 function App() {
-  return <h1>Hey</h1>;
+  return (
+    <>
+      <HomeHeader />
+      <OurMenus />
+    </>
+  );
 }
 
 export default App;
