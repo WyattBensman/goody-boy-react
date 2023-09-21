@@ -7,7 +7,7 @@ export function OurMenus() {
         className="h-8 md:h-10 mb-10"
         alt=""
       />
-      <div class="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center">
         {/* FOOD */}
         <div className="md:w-1/4 w-3/4 mx-5 mt-10 md:mt-0">
           <a
@@ -33,7 +33,11 @@ export function OurMenus() {
               className="rounded border border-4 border-blue-300"
               alt=""
             />
-            <img src="./images/text/menu-drinks.png" class="h-6 mt-3" alt="" />
+            <img
+              src="./images/text/menu-drinks.png"
+              className="h-6 mt-3"
+              alt=""
+            />
           </a>
         </div>
         {/* HAPPY HOUR */}

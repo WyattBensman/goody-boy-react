@@ -1,10 +1,16 @@
 import { useState } from "react";
+import { DropdownMenu } from "./DropdownMenu";
 
-export default function HomeNav() {
+export function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
 
   return (
-    <nav className="bg-blue-300 fixed top-0 w-full shadow-md p-6 md:p-9">
+    <nav className="bg-blue-300 fixed top-0 w-full shadow-md p-6 md:p-1">
       <div className="w-full relative flex justify-between items-center">
         {/* Brand */}
         <a href="#" className="md:hidden text-2xl font-bold text-gray-800">
@@ -30,8 +36,31 @@ export default function HomeNav() {
         id="example-navbar-danger"
       >
         {/* NavBar Items */}
-        <ul className="flex md:flex-row flex-col md:mx-auto md:space-x-12 text-xl md:font-light text-white">
-          <li className="nav-item md:mt-0 md:mb-0 mt-4 mb-1">
+        <ul className="flex md:items-center md:flex-row flex-col md:mx-auto md:space-x-12 text-xl md:font-light text-white">
+          <li className="nav-item md:mt-0 md:mb-0 mt-4 mb-1 md:pl-8">
+            <a
+              href="#"
+              className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
+            >
+              HOME
+            </a>
+          </li>
+          <li className="nav-item md:my-0 my-1 relative hidden md:block">
+            <a
+              href="#"
+              className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
+              onClick={toggleDropdown}
+            >
+              MENUS <i class="fa-solid fa-caret-down fa-2xs text-white"></i>
+            </a>
+            {dropdownOpen && <DropdownMenu />}
+          </li>
+          <img
+            src="./images/branding/navbar-logo.png"
+            className="h-24 hidden md:flex"
+            alt=""
+          />
+          <li className="nav-item md:my-0 my-1 md:hidden">
             <a
               href="#"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
@@ -39,7 +68,7 @@ export default function HomeNav() {
               FOOD
             </a>
           </li>
-          <li className="nav-item md:my-0 my-1">
+          <li className="nav-item md:my-0 my-1 md:hidden">
             <a
               href="#"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
@@ -47,7 +76,7 @@ export default function HomeNav() {
               DRINKS
             </a>
           </li>
-          <li className="nav-item md:my-0 my-1">
+          <li className="nav-item md:my-0 my-1 md:hidden">
             <a
               href="#"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
