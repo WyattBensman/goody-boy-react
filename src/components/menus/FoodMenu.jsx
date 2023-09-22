@@ -45,14 +45,17 @@ export function FoodMenu() {
             <p className="mt-4 text-lg">Wings</p>
             <p className="text-md font-light">
               <i>
-                House-Cooked Corned Beef, Sauerkraut, Swiss, Russian Dressing
+                1 Pound of Wings Tossed in Buffalo, BBQ, or House-Made Dry Rub,
+                Bleu Cheese Dressing, Celery, and Carrots
               </i>
             </p>
             {/* Item 1 */}
             <p className="mt-4 text-lg">Chicken Tenders</p>
             <p className="text-md font-light">
               <i>
-                House-Cooked Corned Beef, Sauerkraut, Swiss, Russian Dressing
+                Crispy and tender chicken tenders, perfectly seasoned and fried
+                to golden perfection. Served with a side of our signature
+                Russian dressing for an extra burst of flavor.
               </i>
             </p>
           </div>
