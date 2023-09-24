@@ -1,7 +1,7 @@
-import { Drinks } from "./pages/Drinks";
+import { ContactLocationPage } from "./components/other/contact-location";
 
 function App() {
-  return <Drinks />;
+  return <ContactLocationPage />;
 }
 
 export default App;
