@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Footer() {
   return (
     /* Contact & Hours of Operations */
@@ -29,46 +31,94 @@ export function Footer() {
           className="h-6 mb-6"
           alt=""
         />
+
         <h3 className="text-xl mb-10">813-993-3926</h3>
         <h3 className="text-xl font-light">1144 North High Street</h3>
         <h3 className="text-xl font-light">Columbus, Ohio 43201</h3>
-        <button className="px-5 py-3 mt-5 mb-8 bg-[#ED2122] border border-4 border-[#ED2122] duration-200 hover:border-4 hover:border-[#F3EC18] text-white font-medium">
+        <a
+          className="px-5 py-3 mt-5 mb-8 bg-[#ED2122] border border-4 border-[#ED2122] duration-200 hover:border-4 hover:border-[#F3EC18] text-white font-medium"
+          href="https://maps.app.goo.gl/JkixWSuvsBHDTmsHA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="./images/text/get-directions.png" className="w-36" alt="" />
-        </button>
+        </a>
       </div>
 
       {/* Divider */}
       <div className="border-t border-white mt-4 md:w-3/4 xl:w-1/2 flex justify-center items-center flex-wrap hidden sm:flex">
-        <img
-          src="./images/establishments/forno.png"
-          className="h-20 mt-4 md:mt-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
-          alt=""
-        />
-        <img
-          src="./images/establishments/pint-house.png"
-          className="h-20 mt-4 md:mt-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
-          alt=""
-        />
-        <img
-          src="./images/establishments/standard-annex.png"
-          className="h-20 mt-4 md:mt-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
-          alt=""
-        />
-        <img
-          src="./images/establishments/standard-hall.png"
-          className="h-20 mb-4 md:mb-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
-          alt=""
-        />
-        <img
-          src="./images/establishments/standard-live.png"
-          className="h-20 mb-4 md:mb-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
-          alt=""
-        />
-        <img
-          src="./images/establishments/urban-meyer-pint-house.png"
-          className="h-20 mb-4 md:mb-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
-          alt=""
-        />
+        {/* Forno */}
+        <a
+          href="https://fornoshortnorth.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./images/establishments/forno.png"
+            className="h-20 mt-4 md:mt-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
+            alt=""
+          />
+        </a>
+        {/* Pint House */}
+        <a
+          href="https://shortnorthpinthouse.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./images/establishments/pint-house.png"
+            className="h-20 mt-4 md:mt-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
+            alt=""
+          />
+        </a>
+        {/* Standard Annex */}
+        <a
+          href="https://standardannex.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./images/establishments/standard-annex.png"
+            className="h-20 mt-4 md:mt-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
+            alt=""
+          />
+        </a>
+        {/* Standard Hall */}
+        <a
+          href="https://standardhall.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./images/establishments/standard-hall.png"
+            className="h-20 mb-4 md:mb-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
+            alt=""
+          />
+        </a>
+        {/* Standard Live */}
+        <a
+          href="https://standardhall.com/live/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./images/establishments/standard-live.png"
+            className="h-20 mb-4 md:mb-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
+            alt=""
+          />
+        </a>
+        {/* Urban Meyer Pint House */}
+        <a
+          href="https://urbanspinthouse.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./images/establishments/urban-meyer-pint-house.png"
+            className="h-20 mb-4 md:mb-0 mx-4 hover:opacity-75 duration-200 hover:cursor-pointer"
+            alt=""
+          />
+        </a>
       </div>
     </section>
   );

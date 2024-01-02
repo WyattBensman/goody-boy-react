@@ -12,7 +12,11 @@ export function FoodMenu() {
         <div className="w-11/12 md:w-1/2 border border-gray-800 text-center">
           {/* Shareables */}
           <div className="m-8">
-            <h3 className="text-3xl font-medium">Shareables</h3>
+            <img
+              src="./images/text/SHAREABLES.png"
+              className="h-6 mx-auto mt-8 mb-4 "
+              alt=""
+            ></img>
             {/* Item 1 */}
             <p className="mt-1 text-lg">Jumbo Popcorn Chicken</p>
             <p className="text-md font-light">
@@ -62,7 +66,11 @@ export function FoodMenu() {
 
           {/* Sandwiches */}
           <div className="m-8">
-            <h3 className="text-3xl font-medium">Sandwiches</h3>
+            <img
+              src="./images/text/SANDWICHES.png"
+              className="h-6 mx-auto mt-8 mb-4 "
+              alt=""
+            ></img>
             {/* Item 1 */}
             <p className="mt-1 text-lg">Goody Boy Burger</p>
             <p className="text-md font-light">
@@ -123,7 +131,11 @@ export function FoodMenu() {
 
           {/* Pizzas */}
           <div className="m-8">
-            <h3 className="text-3xl font-medium">Pizzas</h3>
+            <img
+              src="./images/text/PIZZAS.png"
+              className="h-6 mx-auto mt-8 mb-4 "
+              alt=""
+            ></img>
             {/* Item 1 */}
             <p className="mt-4 text-lg">Meat Lovers</p>
             <p className="text-md font-light">
@@ -170,7 +182,11 @@ export function FoodMenu() {
 
           {/* Side Dishes */}
           <div className="m-8">
-            <h3 className="text-3xl font-medium">Side Dishes</h3>
+            <img
+              src="./images/text/SIDE-DISHES.png"
+              className="h-6 mx-auto mt-8 mb-4 "
+              alt=""
+            ></img>
             <p className="mt-1 text-lg">Shoestring French Fries</p>
             <p className="mt-1 text-lg">Waffle Fries</p>
             <p className="mt-1 text-lg">Mashed Potatoes</p>

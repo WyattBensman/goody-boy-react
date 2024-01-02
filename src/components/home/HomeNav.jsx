@@ -1,10 +1,34 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function HomeNav() {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the user has scrolled past one full screen width
+      const scrolled = window.scrollY > window.innerHeight;
+
+      // Update the state accordingly
+      setHasScrolled(scrolled);
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="bg-blue-300 fixed top-0 w-full shadow-md p-6 md:p-9">
+    <nav
+      className={`${
+        hasScrolled ? "shadow-md" : ""
+      } bg-blue-300 fixed top-0 w-full p-6 md:p-9 z-10`}
+    >
       <div className="w-full relative flex justify-between items-center">
         {/* Brand */}
         <a href="#" className="md:hidden text-2xl font-bold text-gray-800">
@@ -32,40 +56,34 @@ export default function HomeNav() {
         {/* NavBar Items */}
         <ul className="flex md:flex-row flex-col md:mx-auto md:space-x-12 text-xl md:font-light text-white">
           <li className="nav-item md:mt-0 md:mb-0 mt-4 mb-1">
-            <a
-              href="#"
+            <Link
+              to="/food"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
             >
               FOOD
-            </a>
+            </Link>
           </li>
           <li className="nav-item md:my-0 my-1">
-            <a
-              href="#"
+            <Link
+              to="/drinks"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
             >
               DRINKS
-            </a>
+            </Link>
           </li>
           <li className="nav-item md:my-0 my-1">
-            <a
-              href="#"
-              className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
-            >
-              HAPPY HOUR
-            </a>
-          </li>
-          <li className="nav-item md:my-0 my-1">
-            <a
-              href="#"
+            <Link
+              to="/contact"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
             >
               CONTACT
-            </a>
+            </Link>
           </li>
           <li className="nav-item md:my-0 my-1">
             <a
-              href="#"
+              href="https://www.ubereats.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
             >
               ORDER

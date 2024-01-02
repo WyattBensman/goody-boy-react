@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { DropdownMenu } from "./DropdownMenu";
+import { NavLink } from "react-router-dom";
+import "../../styles.css";
+import DropdownMenu from "./DropdownMenu";
 
 export function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -38,63 +40,48 @@ export function NavBar() {
         {/* NavBar Items */}
         <ul className="flex md:items-center md:flex-row flex-col md:mx-auto md:space-x-12 text-xl md:font-light text-white">
           <li className="nav-item md:mt-0 md:mb-0 mt-4 mb-1 md:pl-8">
-            <a
-              href="#"
+            <NavLink
+              to="/"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
             >
               HOME
-            </a>
+            </NavLink>
           </li>
-          <li className="nav-item md:my-0 my-1 relative hidden md:block">
-            <a
-              href="#"
-              className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
-              onClick={toggleDropdown}
-            >
-              MENUS <i class="fa-solid fa-caret-down fa-2xs text-white"></i>
-            </a>
-            {dropdownOpen && <DropdownMenu />}
-          </li>
+          <DropdownMenu />
           <img
             src="./images/branding/navbar-logo.png"
             className="h-24 hidden md:flex"
             alt=""
           />
           <li className="nav-item md:my-0 my-1 md:hidden">
-            <a
-              href="#"
+            <NavLink
+              to="/food"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
             >
               FOOD
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item md:my-0 my-1 md:hidden">
-            <a
-              href="#"
+            <NavLink
+              to="/drinks"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
             >
               DRINKS
-            </a>
-          </li>
-          <li className="nav-item md:my-0 my-1 md:hidden">
-            <a
-              href="#"
-              className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
-            >
-              HAPPY HOUR
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item md:my-0 my-1">
-            <a
-              href="#"
+            <NavLink
+              to="/contact"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
             >
               CONTACT
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item md:my-0 my-1">
             <a
-              href="#"
+              href="https://www.ubereats.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-[#ED2122] hover:border-b hover:border-[#ED2122] duration-300"
             >
               ORDER

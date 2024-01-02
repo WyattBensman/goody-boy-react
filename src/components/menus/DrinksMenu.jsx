@@ -32,89 +32,99 @@ export function DrinksMenu() {
         </div>
         <div className="flex flex-col md:flex-row w-11/12 lg:w-1/2 border border-gray-800 text-center">
           {/* Cocktails Container */}
-          <div className="lg:w-1/2 w-full bg-[#ED2122] bg-opacity-95 h-fit text-white">
-            <img
-              src="./images/text/COCKTAILS.png"
-              className="h-6 mx-auto mt-8 mb-4 "
-              alt=""
-            ></img>
-            {/* <h1 className="text-2xl pt-8 pb-4 font-semibold">COCKTAILS $10</h1> */}
-            {/* Drink 1 */}
-            <p className="text-lg">Goody Boy Mule</p>
-            <p className="text-sm font-light">
-              <i>(Add Freshblueberries $1)</i>
-            </p>
-            <p className="text-sm font-light mx-10">
-              <i>Belvedere Vodka, Ginger Beer, Fresh Lime Juice</i>
-            </p>
-            {/* Drink 2 */}
-            <p className="text-lg mt-2">Blueberry Mint Lemonade</p>
-            <p className="text-sm font-light mx-10">
-              <i>
-                Blueberry Smirnoff Vodka, Fresh Muddled Blueberries and Mint,
-                Fresh Sequeezed Lemon Juice and Topped with House Lemonade
-              </i>
-            </p>
-            {/* Drink 3 */}
-            <p className="text-lg mt-2">Gin & Juice</p>
-            <p className="text-sm font-light mx-10">
-              <i>
-                Tanqueray 10, Fresh Squeezed Grapefruit Juice, Elderflower
-                Syrup, Steigl Grapefruit Radler
-              </i>
-            </p>
-            {/* Drink 4 */}
-            <p className="text-lg mt-2">Cucumber Spritzer</p>
-            <p className="text-sm font-light mx-10">
-              <i>Tito's, Muddled Cucumber, Fresh Mint, Lemon</i>
-            </p>
-            {/* Drink 5 */}
-            <p className="text-lg mt-2">The Goody Cosmopolitan</p>
-            <p className="text-sm font-light mx-10">
-              <i>Vohio Vodka, Noble Cut Orangecello, Cranberry</i>
-            </p>
-            {/* Drink 6 */}
-            <p className="text-lg mt-2">No Diving!</p>
-            <p className="text-sm font-light mx-10">
-              <i>Captain White Rum, Malibu, Blue Curacao, Tropical Red Bull</i>
-            </p>
-            {/* Drink 7 */}
-            <p className="text-lg mt-2">Peach Daly</p>
-            <p className="text-sm font-light mx-10">
-              <i>Crown Peach, Lemonade, Iced Tea</i>
-            </p>
-            {/* Drink 8 */}
-            <p className="text-lg mt-2">Water Boi</p>
-            <p className="text-sm font-light mx-10">
-              <i>
-                El Jimador, Watermelon Schnapps, Lime Juice, Sour Mix, Sprite
-              </i>
-            </p>
-            {/* Drink 8 */}
-            <p className="text-lg mt-2">Strawberry Smash</p>
-            <p className="text-sm font-light mx-10">
-              <i>Jack Daniel's, Lemon Juice, Strawberries, Sprite</i>
-            </p>
-            {/* Drink 9 */}
-            <p className="text-lg mt-2">Lemon Drop Shot $7</p>
-            <p className="text-sm font-light mx-10">
-              <i>
-                Noble Cut Liimoncello, Triple Sec, Sour Mix, Lemonade, and Fresh
-                Lemon Wedge
-              </i>
-            </p>
-            {/* Drink 10 */}
-            <p className="text-lg mt-2">Mexican Candy Shot $7</p>
-            <p className="text-sm font-light mx-10 pb-8">
-              <i>
-                Ghost Tequila, Watermelon Schnapps, Sour Mix, Sprite, with a
-                Tajin Rim
-              </i>
-            </p>
+          <div className="lg:w-1/2 w-full bg-[#ED2122] bg-opacity-95 h-full text-white mb-0">
+            <div className="border-b border-r border-gray-800 h-max pt-1">
+              <img
+                src="./images/text/COCKTAILS.png"
+                className="h-6 mx-auto mt-8 mb-4"
+                alt=""
+              ></img>
+              {/* <h1 className="text-2xl pt-8 pb-4 font-semibold">COCKTAILS $10</h1> */}
+              {/* Drink 1 */}
+              <p className="text-lg">Goody Boy Mule</p>
+              <p className="text-sm font-light">
+                <i>(Add Freshblueberries $1)</i>
+              </p>
+              <p className="text-sm font-light mx-10">
+                <i>Belvedere Vodka, Ginger Beer, Fresh Lime Juice</i>
+              </p>
+              {/* Drink 2 */}
+              <p className="text-lg mt-2">Blueberry Mint Lemonade</p>
+              <p className="text-sm font-light mx-10">
+                <i>
+                  Blueberry Smirnoff Vodka, Fresh Muddled Blueberries and Mint,
+                  Fresh Sequeezed Lemon Juice and Topped with House Lemonade
+                </i>
+              </p>
+              {/* Drink 3 */}
+              <p className="text-lg mt-2">Gin & Juice</p>
+              <p className="text-sm font-light mx-10">
+                <i>
+                  Tanqueray 10, Fresh Squeezed Grapefruit Juice, Elderflower
+                  Syrup, Steigl Grapefruit Radler
+                </i>
+              </p>
+              {/* Drink 4 */}
+              <p className="text-lg mt-2">Cucumber Spritzer</p>
+              <p className="text-sm font-light mx-10">
+                <i>Tito's, Muddled Cucumber, Fresh Mint, Lemon</i>
+              </p>
+              {/* Drink 5 */}
+              <p className="text-lg mt-2">The Goody Cosmopolitan</p>
+              <p className="text-sm font-light mx-10">
+                <i>Vohio Vodka, Noble Cut Orangecello, Cranberry</i>
+              </p>
+              {/* Drink 6 */}
+              <p className="text-lg mt-2">No Diving!</p>
+              <p className="text-sm font-light mx-10">
+                <i>
+                  Captain White Rum, Malibu, Blue Curacao, Tropical Red Bull
+                </i>
+              </p>
+              {/* Drink 7 */}
+              <p className="text-lg mt-2">Peach Daly</p>
+              <p className="text-sm font-light mx-10">
+                <i>Crown Peach, Lemonade, Iced Tea</i>
+              </p>
+              {/* Drink 8 */}
+              <p className="text-lg mt-2">Water Boi</p>
+              <p className="text-sm font-light mx-10">
+                <i>
+                  El Jimador, Watermelon Schnapps, Lime Juice, Sour Mix, Sprite
+                </i>
+              </p>
+              {/* Drink 8 */}
+              <p className="text-lg mt-2">Strawberry Smash</p>
+              <p className="text-sm font-light mx-10">
+                <i>Jack Daniel's, Lemon Juice, Strawberries, Sprite</i>
+              </p>
+              {/* Drink 9 */}
+              <p className="text-lg mt-2">Lemon Drop Shot $7</p>
+              <p className="text-sm font-light mx-10">
+                <i>
+                  Noble Cut Liimoncello, Triple Sec, Sour Mix, Lemonade, and
+                  Fresh Lemon Wedge
+                </i>
+              </p>
+              {/* Drink 10 */}
+              <p className="text-lg mt-2">Mexican Candy Shot $7</p>
+              <p className="text-sm font-light mx-10 pb-8">
+                <i>
+                  Ghost Tequila, Watermelon Schnapps, Sour Mix, Sprite, with a
+                  Tajin Rim
+                </i>
+              </p>
+            </div>
+            {/* Bottles */}
             <div className="bg-white text-black text-left px-8">
-              <h1 className="text-2xl pt-8 text-center font-semibold">
-                BOTTLES
+              <h1 className="text-2xl pt-8 mb-2 text-center font-semibold">
+                <img
+                  src="./images/text/BOTTLES.png"
+                  className="h-5 mx-auto"
+                  alt=""
+                ></img>
               </h1>
+
               <p className="pt-2 pb-4 text-sm text-center">
                 <i>(Also available in draft)</i>
               </p>
@@ -177,7 +187,7 @@ export function DrinksMenu() {
           <div className="lg:w-1/2 w-full text-left px-8">
             <img
               src="./images/text/DRAFT-BEER.png"
-              className="h-5 mx-auto mt-8 mb-4 "
+              className="h-5 mx-auto mt-9 mb-4 "
               alt=""
             ></img>
             {/* <h1 className="text-2xl pt-8 pb-4 text-center font-semibold">

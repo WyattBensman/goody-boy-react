@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function OurMenus() {
   return (
     /* Menu Section */
@@ -10,8 +12,8 @@ export function OurMenus() {
       <div className="flex flex-wrap justify-center">
         {/* FOOD */}
         <div className="md:w-1/4 w-3/4 mx-5 mt-10 md:mt-0">
-          <a
-            href="##"
+          <Link
+            to="/food"
             className="flex flex-col items-center hover:opacity-80 transition-opacity duration-200 ease-in-out"
           >
             <img
@@ -20,12 +22,12 @@ export function OurMenus() {
               alt=""
             />
             <img src="./images/text/menu-food.png" class="h-6 mt-3" alt="" />
-          </a>
+          </Link>
         </div>
         {/* DRINKS */}
         <div className="md:w-1/4 w-3/4 mx-5 mt-10 md:mt-0">
-          <a
-            href="##"
+          <Link
+            to="/drinks"
             className="flex flex-col items-center hover:opacity-80 transition-opacity duration-200 ease-in-out"
           >
             <img
@@ -38,12 +40,12 @@ export function OurMenus() {
               className="h-6 mt-3"
               alt=""
             />
-          </a>
+          </Link>
         </div>
         {/* HAPPY HOUR */}
         <div className="md:w-1/4 w-3/4 mx-5 mt-10 md:mt-0">
-          <a
-            href="##"
+          <Link
+            to="/drinks"
             className="flex flex-col items-center hover:opacity-80 transition-opacity duration-200 ease-in-out"
           >
             <img
@@ -56,7 +58,7 @@ export function OurMenus() {
               className="h-6 mt-3"
               alt=""
             />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
-import { ContactLocationPage } from "./components/other/contact-location";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  return <ContactLocationPage />;
+  return <Outlet />;
 }
 
 export default App;
