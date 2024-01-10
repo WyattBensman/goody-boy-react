@@ -18,15 +18,6 @@ export const router = createBrowserRouter([
   { path: "/contact", element: <Contact /> },
 ]);
 
-/* function HomeLayout() {
-  return (
-    <>
-      <HomeNav />
-      <Outlet />
-    </>
-  );
-} */
-
 function SecondaryLayout() {
   return (
     <>
